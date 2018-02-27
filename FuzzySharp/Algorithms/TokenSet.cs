@@ -6,7 +6,7 @@ namespace FuzzySharp.Algorithms
 {
     public class TokenSet : Algoritm
     {
-        public static int Score(string s1, string s2, IRatio ratio)
+        public override int Score(string s1, string s2, IRatio ratio)
         {
             var tokens1 = new HashSet<string>(Process(s1));
             var tokens2 = new HashSet<string>(Process(s2));

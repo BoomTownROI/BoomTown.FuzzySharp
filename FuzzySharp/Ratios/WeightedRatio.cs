@@ -18,7 +18,7 @@ namespace FuzzySharp.Ratios
             if (len1 == 0 || len2 == 0) { return 0; }
             
             var baseValue = new SimpleRatio().Score(s1, s2);
-            var lenRatio = ((double) Math.Max(len1, len2)) / Math.Min(len1, len2);
+            var lenRatio = (double) Math.Max(len1, len2) / Math.Min(len1, len2);
 
             // if strings are similar length don't use partials
             if (lenRatio < 1.5) 
@@ -27,19 +27,18 @@ namespace FuzzySharp.Ratios
             // if one string is much shorter than the other
             if (lenRatio > 8) 
                 partialScale = .6;
-
+            
             if (tryPartials)
             {
-
                 var partial = new PartialRatio().Score(s1, s2) * partialScale;
-                var partialSort =  TokenSort.Score(s1, s2, new PartialRatio()) * unbaseScale * partialScale;
-                var partialSet = TokenSet.Score(s1, s2, new PartialRatio()) * unbaseScale * partialScale;
+                var partialSort =  new TokenSort().Score(s1, s2, new PartialRatio()) * unbaseScale * partialScale;
+                var partialSet = new TokenSet().Score(s1, s2, new PartialRatio()) * unbaseScale * partialScale;
 
                 return Convert.ToInt32(new[] {baseValue, partial, partialSort, partialSet}.Max());
             }
 
-            var tokenSort = TokenSort.Score(s1, s2, new SimpleRatio()) * unbaseScale;
-            var tokenSet = TokenSet.Score(s1, s2, new SimpleRatio()) * unbaseScale;
+            var tokenSort = new TokenSort().Score(s1, s2, new SimpleRatio()) * unbaseScale;
+            var tokenSet = new TokenSet().Score(s1, s2, new SimpleRatio()) * unbaseScale;
 
             return Convert.ToInt32(new[] {baseValue, tokenSort, tokenSet}.Max());
         }
