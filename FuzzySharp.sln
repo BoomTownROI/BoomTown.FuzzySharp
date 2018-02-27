@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzySharp", "FuzzySharp\FuzzySharp.csproj", "{453EE59D-2DAC-45B8-9A94-91D299BB1268}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzySharp.Tests", "FuzzySharp.Tests\FuzzySharp.Tests.csproj", "{7B87E8F4-0F86-4C06-9104-49219A3AF234}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{453EE59D-2DAC-45B8-9A94-91D299BB1268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{453EE59D-2DAC-45B8-9A94-91D299BB1268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{453EE59D-2DAC-45B8-9A94-91D299BB1268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{453EE59D-2DAC-45B8-9A94-91D299BB1268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B87E8F4-0F86-4C06-9104-49219A3AF234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B87E8F4-0F86-4C06-9104-49219A3AF234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B87E8F4-0F86-4C06-9104-49219A3AF234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B87E8F4-0F86-4C06-9104-49219A3AF234}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
