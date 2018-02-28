@@ -6,7 +6,18 @@ namespace FuzzySharp.Algorithms
 {
     public class TokenSet : Algoritm
     {
-        public override int Score(string s1, string s2, IRatio ratio)
+        private readonly IRatio _ratio;
+
+        /// <summary>
+        /// Create a new TokenSet Ratio
+        /// </summary>
+        /// <param name="ratio">The Ratio to use when calculating scores</param>
+        public TokenSet(IRatio ratio)
+        {
+            _ratio = ratio;
+        }
+        
+        public override int Score(string s1, string s2)
         {
             var tokens1 = new HashSet<string>(Process(s1));
             var tokens2 = new HashSet<string>(Process(s2));
@@ -21,9 +32,9 @@ namespace FuzzySharp.Algorithms
 
             var results = new List<int>
             {
-                ratio.Score(sortedInter, sorted1To2),
-                ratio.Score(sortedInter, sorted2To1),
-                ratio.Score(sorted1To2, sorted2To1)
+                _ratio.Score(sortedInter, sorted1To2),
+                _ratio.Score(sortedInter, sorted2To1),
+                _ratio.Score(sorted1To2, sorted2To1)
             };
 
             return results.Max();

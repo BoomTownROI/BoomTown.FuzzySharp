@@ -326,7 +326,7 @@ namespace FuzzySharp.InternalDiffUtils
             if (spos < len1 || dpos < len2)
             {
                 if (len1 - spos != len2 - dpos)
-                    throw new ArgumentException();
+                    throw new ArgumentException(@"¯\_(ツ)_/¯");
 
                 var mb = new MatchingBlock
                 {
@@ -339,7 +339,7 @@ namespace FuzzySharp.InternalDiffUtils
             }
 
             if (numberOfMatchingBlocks != mbIndex) 
-                throw new ArgumentException();
+                throw new ArgumentException(@"¯\_(ツ)_/¯");
 
             var finalBlock = new MatchingBlock
             {
@@ -542,7 +542,7 @@ namespace FuzzySharp.InternalDiffUtils
                     continue;
                 }
 
-                throw new ArgumentException();
+                throw new ArgumentException(@"¯\_(ツ)_/¯");
             }
 
             return ops;

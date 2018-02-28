@@ -5,10 +5,8 @@ using FuzzySharp.Ratios;
 
 namespace FuzzySharp.Algorithms
 {
-    public abstract class Algoritm
+    public abstract class Algoritm : IRatio
     {
-        public abstract int Score(string s1, string s2, IRatio ratio);
-        
         internal static string SortAndJoin(IEnumerable<string> words)
         {
             var joined = string.Join(" ", words.OrderBy(x => x).AsEnumerable());
@@ -20,5 +18,7 @@ namespace FuzzySharp.Algorithms
         {
             return Regex.Split(value, "\\s+");
         }
+
+        public abstract int Score(string s1, string s2);
     }
 }

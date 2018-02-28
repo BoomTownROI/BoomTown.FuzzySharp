@@ -52,7 +52,7 @@ namespace FuzzySharp
         {
             s1 = Prepare(s1, options);
             s2 = Prepare(s2, options);
-            return new TokenSort().Score(s1, s2, new SimpleRatio());
+            return new TokenSort(new SimpleRatio()).Score(s1, s2);
         }
         
         /// <summary>
@@ -67,7 +67,7 @@ namespace FuzzySharp
         {
             s1 = Prepare(s1, options);
             s2 = Prepare(s2, options);
-            return new TokenSort().Score(s1, s2, new PartialRatio());
+            return new TokenSort(new PartialRatio()).Score(s1, s2);
         }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace FuzzySharp
         {
             s1 = Prepare(s1, options);
             s2 = Prepare(s2, options);
-            return new TokenSet().Score(s1, s2, new SimpleRatio());
+            return new TokenSet(new SimpleRatio()).Score(s1, s2);
         }
         
         /// <summary>
@@ -99,7 +99,7 @@ namespace FuzzySharp
         {
             s1 = Prepare(s1, options);
             s2 = Prepare(s2, options);
-            return new TokenSet().Score(s1, s2, new PartialRatio());
+            return new TokenSet(new PartialRatio()).Score(s1, s2);
         }
 
         /// <summary>

@@ -31,14 +31,14 @@ namespace FuzzySharp.Ratios
             if (tryPartials)
             {
                 var partial = new PartialRatio().Score(s1, s2) * partialScale;
-                var partialSort =  new TokenSort().Score(s1, s2, new PartialRatio()) * unbaseScale * partialScale;
-                var partialSet = new TokenSet().Score(s1, s2, new PartialRatio()) * unbaseScale * partialScale;
+                var partialSort =  new TokenSort(new PartialRatio()).Score(s1, s2) * unbaseScale * partialScale;
+                var partialSet = new TokenSet(new PartialRatio()).Score(s1, s2) * unbaseScale * partialScale;
 
                 return Convert.ToInt32(new[] {baseValue, partial, partialSort, partialSet}.Max());
             }
 
-            var tokenSort = new TokenSort().Score(s1, s2, new SimpleRatio()) * unbaseScale;
-            var tokenSet = new TokenSet().Score(s1, s2, new SimpleRatio()) * unbaseScale;
+            var tokenSort = new TokenSort(new SimpleRatio()).Score(s1, s2) * unbaseScale;
+            var tokenSet = new TokenSet(new SimpleRatio()).Score(s1, s2) * unbaseScale;
 
             return Convert.ToInt32(new[] {baseValue, tokenSort, tokenSet}.Max());
         }
