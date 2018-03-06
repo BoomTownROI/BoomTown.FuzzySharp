@@ -1,5 +1,4 @@
-﻿using System.Text.RegularExpressions;
-using Xunit;
+﻿using Xunit;
 
 namespace FuzzySharp.Tests
 {
