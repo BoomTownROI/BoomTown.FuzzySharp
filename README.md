@@ -14,8 +14,11 @@ Benefits of this project include
 * No Dependencies!
 * Can be used in full .Net (>4.6.1) or .Net Core (>2.0) applications!
 
+## Examples
 
-Credits 
+TODO: Add Examples
+
+## Credits 
 * [SeatGeek](https://github.com/seatgeek/fuzzywuzzy) for coming up with the initial [algorithm](http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python)
 * [XDrop](https://github.com/xdrop) for converting Python to Java 
 * Anyone who worked on the original [python-levenshtein](https://github.com/miohtama/python-Levenshtein) project

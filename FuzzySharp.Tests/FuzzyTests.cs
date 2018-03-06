@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using System.Text.RegularExpressions;
+using Xunit;
 
 namespace FuzzySharp.Tests
 {
@@ -9,6 +10,7 @@ namespace FuzzySharp.Tests
         [InlineData("mysmilarstring", "myawfullysimilarstirng", 72)]
         [InlineData("mysmilarstring", "mysimilarstring", 97)]
         [InlineData("csr", "c s r", 75)]
+        [InlineData("  SeAFood Is ThE bEsT FOod  ", "seafood is tHe best foOd", 100)]
         public void TestRatio(string s1, string s2, int expected)
         {
             Assert.Equal(expected, Fuzzy.Ratio(s1, s2));
@@ -22,7 +24,13 @@ namespace FuzzySharp.Tests
         [InlineData("Opposite ways go alike", "Should be the same", 33)]
         public void TestCaseSensitivePartialRatio(string s1, string s2, int expected)
         {
-            Assert.Equal(expected, Fuzzy.PartialRatio(s1, s2, StringOptions.CaseSensitive));
+            Assert.Equal(expected, Fuzzy.PartialRatio(s1, s2, StringOptions.CaseSensitive, StringOptions.PreserveNonAlphaNumeric));
+        }
+
+        [Fact]
+        public void TestSpecialCharacterRatio()
+        {
+            Assert.Equal(96, Fuzzy.TokenSetRatio("Steve Ordonez", "Steve Ordoí±ez"));
         }
         
         [Theory]

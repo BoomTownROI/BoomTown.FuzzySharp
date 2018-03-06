@@ -3,6 +3,9 @@
     public enum StringOptions
     {
         CaseSensitive,
-        PreserveWhitespace
+        PreserveWhitespace,
+        PreserveNonAlphaNumeric,
+        PreserveNonAscii,
+        DoNotTouchMyString
     }
 }

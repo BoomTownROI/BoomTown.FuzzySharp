@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using FuzzySharp.Algorithms;
 using FuzzySharp.Ratios;
 
@@ -118,15 +120,30 @@ namespace FuzzySharp
 
         private static string Prepare(string value, params StringOptions[] options)
         {
+            var distinctOptions = new HashSet<StringOptions>(options);
+            
             if (string.IsNullOrEmpty(value)) 
                 throw new ArgumentNullException();
 
-            if (options.All(x => x != StringOptions.CaseSensitive))
+            if (distinctOptions.Contains(StringOptions.DoNotTouchMyString))
+                return value;
+            
+            // Non ASCII Characters such as ± are removed and replaced with an empty string, this matches the 
+            // Python implementation of the asciidammit(s) function
+            if (!distinctOptions.Contains(StringOptions.PreserveNonAscii))
+                value = Regex.Replace(value, @"[^\u0020-\u007E]", string.Empty);
+
+            // All characters except letters, numbers, or an underscore are replaced with an empty space.  
+            // Same as Python replace_non_letters_non_numbers_with_whitespace function
+            if (!distinctOptions.Contains(StringOptions.PreserveNonAlphaNumeric))
+                value = Regex.Replace(value, @"[^a-zA-Z0-9 _]", " ");
+            
+            if (!distinctOptions.Contains(StringOptions.CaseSensitive))
                 value = value.ToLower();
 
-            if (options.All(x => x != StringOptions.PreserveWhitespace))
+            if (!distinctOptions.Contains(StringOptions.PreserveWhitespace))
                 value = value.Trim();
-                
+
             return value;
         }
     }
