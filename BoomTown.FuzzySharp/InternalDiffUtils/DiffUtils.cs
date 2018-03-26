@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using FuzzySharp.InternalDiffUtils.Models;
+using BoomTown.FuzzySharp.InternalDiffUtils.Models;
+
 // ReSharper disable InconsistentNaming
 
-namespace FuzzySharp.InternalDiffUtils
+namespace BoomTown.FuzzySharp.InternalDiffUtils
 {
     
 /**

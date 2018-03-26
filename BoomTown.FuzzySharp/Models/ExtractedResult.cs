@@ -1,4 +1,4 @@
-﻿namespace FuzzySharp.Models
+﻿namespace BoomTown.FuzzySharp.Models
 {
     public class ExtractedResult
     {

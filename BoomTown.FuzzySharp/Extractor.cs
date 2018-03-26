@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using FuzzySharp.Models;
-using FuzzySharp.Ratios;
+using BoomTown.FuzzySharp.Models;
+using BoomTown.FuzzySharp.Ratios;
 
-namespace FuzzySharp
+namespace BoomTown.FuzzySharp
 {
     /// <summary>
     /// Extract top results from a list of strings

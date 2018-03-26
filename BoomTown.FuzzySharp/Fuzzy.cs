@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
-using FuzzySharp.Algorithms;
-using FuzzySharp.Ratios;
+using BoomTown.FuzzySharp.Algorithms;
+using BoomTown.FuzzySharp.Ratios;
 
-namespace FuzzySharp
+namespace BoomTown.FuzzySharp
 {
     public static class Fuzzy
     {

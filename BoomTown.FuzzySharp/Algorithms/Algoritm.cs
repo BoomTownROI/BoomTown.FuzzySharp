@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using FuzzySharp.Ratios;
+using BoomTown.FuzzySharp.Ratios;
 
-namespace FuzzySharp.Algorithms
+namespace BoomTown.FuzzySharp.Algorithms
 {
     public abstract class Algoritm : IRatio
     {

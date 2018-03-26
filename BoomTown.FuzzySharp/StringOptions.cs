@@ -1,4 +1,4 @@
-﻿namespace FuzzySharp
+﻿namespace BoomTown.FuzzySharp
 {
     public enum StringOptions
     {

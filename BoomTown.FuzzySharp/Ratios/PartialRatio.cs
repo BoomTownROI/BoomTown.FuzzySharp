@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using FuzzySharp.InternalDiffUtils;
+using BoomTown.FuzzySharp.InternalDiffUtils;
 
-namespace FuzzySharp.Ratios
+namespace BoomTown.FuzzySharp.Ratios
 {
     public class PartialRatio : IRatio
     {

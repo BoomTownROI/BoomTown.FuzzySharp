@@ -1,6 +1,6 @@
-﻿using FuzzySharp.Ratios;
+﻿using BoomTown.FuzzySharp.Ratios;
 
-namespace FuzzySharp.Algorithms
+namespace BoomTown.FuzzySharp.Algorithms
 {
     public class TokenSort : Algoritm
     {

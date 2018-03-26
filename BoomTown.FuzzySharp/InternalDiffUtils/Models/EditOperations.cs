@@ -1,4 +1,4 @@
-﻿namespace FuzzySharp.InternalDiffUtils.Models
+﻿namespace BoomTown.FuzzySharp.InternalDiffUtils.Models
 {
     internal class EditOperations
     {

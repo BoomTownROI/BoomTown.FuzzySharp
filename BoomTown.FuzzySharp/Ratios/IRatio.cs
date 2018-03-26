@@ -1,4 +1,4 @@
-﻿namespace FuzzySharp.Ratios
+﻿namespace BoomTown.FuzzySharp.Ratios
 {
     public interface IRatio
     {

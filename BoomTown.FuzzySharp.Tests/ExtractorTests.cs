@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using Xunit;
 
-namespace FuzzySharp.Tests
+namespace BoomTown.FuzzySharp.Tests
 {
     public class ExtractorTests
     {

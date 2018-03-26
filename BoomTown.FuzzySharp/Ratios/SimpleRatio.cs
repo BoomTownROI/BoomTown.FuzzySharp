@@ -1,7 +1,7 @@
 ﻿using System;
-using FuzzySharp.InternalDiffUtils;
+using BoomTown.FuzzySharp.InternalDiffUtils;
 
-namespace FuzzySharp.Ratios
+namespace BoomTown.FuzzySharp.Ratios
 {
     public class SimpleRatio : IRatio
     {

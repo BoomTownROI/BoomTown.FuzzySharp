@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using FuzzySharp.Algorithms;
+using BoomTown.FuzzySharp.Algorithms;
 
-namespace FuzzySharp.Ratios
+namespace BoomTown.FuzzySharp.Ratios
 {
     public class WeightedRatio : IRatio
     {            
