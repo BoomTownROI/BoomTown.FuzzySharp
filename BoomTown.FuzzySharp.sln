@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzySharp", "FuzzySharp\FuzzySharp.csproj", "{453EE59D-2DAC-45B8-9A94-91D299BB1268}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomTown.FuzzySharp", "BoomTown.FuzzySharp\BoomTown.FuzzySharp.csproj", "{453EE59D-2DAC-45B8-9A94-91D299BB1268}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzySharp.Tests", "FuzzySharp.Tests\FuzzySharp.Tests.csproj", "{7B87E8F4-0F86-4C06-9104-49219A3AF234}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomTown.FuzzySharp.Tests", "BoomTown.FuzzySharp.Tests\BoomTown.FuzzySharp.Tests.csproj", "{7B87E8F4-0F86-4C06-9104-49219A3AF234}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
