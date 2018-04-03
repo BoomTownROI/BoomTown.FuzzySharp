@@ -1,5 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
+    <Authors>BoomTown</Authors>
+    <Company>BoomTown</Company>
+    <Description>A C# port of SeatGeek's FuzzyWuzzy Library for string comparisons.</Description>
+    <PackageLicenseUrl>https://github.com/BoomTownROI/BoomTown.FuzzySharp/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/BoomTownROI/BoomTown.FuzzySharp</PackageProjectUrl>
+    <PackageTags>fuzzysharp, fuzzywuzzy, fuzzy match, string comparison</PackageTags>
+    <PackageIconUrl>http://boomtownroi.com/wp-content/themes/SG-Theme/images/style/logos/color.png</PackageIconUrl>
   </PropertyGroup>
 </Project>
