@@ -9,6 +9,8 @@ This project is a port of the [JavaWuzzy](https://github.com/xdrop/fuzzywuzzy) i
 
 The FuzzySharp library is a .netstandard 1.0 project. To run the unit tests you will need .netcore 2.0.
 
+Available on [nuget.org](https://www.nuget.org/packages/BoomTown.FuzzySharp/)
+
 Benefits of this project include
 
 * No Dependencies!
