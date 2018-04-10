@@ -2,7 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomTown.FuzzySharp", "BoomTown.FuzzySharp\BoomTown.FuzzySharp.csproj", "{453EE59D-2DAC-45B8-9A94-91D299BB1268}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomTown.FuzzySharp.Tests", "BoomTown.FuzzySharp.Tests\BoomTown.FuzzySharp.Tests.csproj", "{7B87E8F4-0F86-4C06-9104-49219A3AF234}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9DF46CC8-7B06-46D4-B639-AA20550196A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomTown.FuzzySharp.Tests", "test\BoomTown.FuzzySharp.Tests\BoomTown.FuzzySharp.Tests.csproj", "{72C8E578-EA1E-4FB2-BE0D-DDC7657B5BD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +16,12 @@ Global
 		{453EE59D-2DAC-45B8-9A94-91D299BB1268}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{453EE59D-2DAC-45B8-9A94-91D299BB1268}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{453EE59D-2DAC-45B8-9A94-91D299BB1268}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7B87E8F4-0F86-4C06-9104-49219A3AF234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B87E8F4-0F86-4C06-9104-49219A3AF234}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B87E8F4-0F86-4C06-9104-49219A3AF234}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B87E8F4-0F86-4C06-9104-49219A3AF234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C8E578-EA1E-4FB2-BE0D-DDC7657B5BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C8E578-EA1E-4FB2-BE0D-DDC7657B5BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C8E578-EA1E-4FB2-BE0D-DDC7657B5BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C8E578-EA1E-4FB2-BE0D-DDC7657B5BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72C8E578-EA1E-4FB2-BE0D-DDC7657B5BD1} = {9DF46CC8-7B06-46D4-B639-AA20550196A0}
 	EndGlobalSection
 EndGlobal
